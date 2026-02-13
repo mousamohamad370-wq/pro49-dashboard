@@ -1,5 +1,39 @@
 .navbar {
+  height: 56px;
+  background: var(--card);
+  border-bottom: 1px solid var(--border);
+  padding: 0 18px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar-title {
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.navbar-right {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.navbar-user {
+  font-size: 13px;
+  opacity: 0.8;
+}
+
+.navbar-btn {
+  border: 1px solid var(--border);
   background: white;
-  padding: 15px 20px;
-  border-bottom: 1px solid #ddd;
+  padding: 8px 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.navbar-btn:hover {
+  border-color: #cfd4e6;
 }

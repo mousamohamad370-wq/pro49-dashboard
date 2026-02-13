@@ -1,3 +1,9 @@
+import Card from "../../components/ui/Card";
+
 export default function Orders() {
-  return <h2>Orders Page</h2>;
+  return (
+    <Card title="Orders">
+      <p>Orders + Invoice calculations will start in Day 4.</p>
+    </Card>
+  );
 }

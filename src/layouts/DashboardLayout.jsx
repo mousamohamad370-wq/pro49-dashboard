@@ -10,9 +10,9 @@ export default function DashboardLayout() {
 
       <div className="layout-content">
         <Navbar />
-        <div className="page-content">
+        <main className="page-content">
           <Outlet />
-        </div>
+        </main>
       </div>
     </div>
   );

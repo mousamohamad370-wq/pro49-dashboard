@@ -1,17 +1,38 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import "../../styles/sidebar.css";
 
 export default function Sidebar() {
   return (
-    <div className="sidebar">
+    <aside className="sidebar">
       <h3 className="logo">PRO49</h3>
 
-      <ul className="sidebar-menu">
-        <li><Link to="/">Home</Link></li>
-        <li><Link to="/customers">Customers</Link></li>
-        <li><Link to="/products">Products</Link></li>
-        <li><Link to="/orders">Orders</Link></li>
-      </ul>
-    </div>
+      <nav>
+        <ul className="sidebar-menu">
+          <li>
+            <NavLink to="/" end className="sidebar-link">
+              Home
+            </NavLink>
+          </li>
+
+          <li>
+            <NavLink to="/customers" className="sidebar-link">
+              Customers
+            </NavLink>
+          </li>
+
+          <li>
+            <NavLink to="/products" className="sidebar-link">
+              Products
+            </NavLink>
+          </li>
+
+          <li>
+            <NavLink to="/orders" className="sidebar-link">
+              Orders
+            </NavLink>
+          </li>
+        </ul>
+      </nav>
+    </aside>
   );
 }

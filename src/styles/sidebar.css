@@ -1,12 +1,13 @@
 .sidebar {
-  width: 220px;
-  background: #1e1e2f;
+  width: 230px;
+  background: var(--sidebar-bg);
   color: white;
   padding: 20px;
 }
 
 .logo {
-  margin-bottom: 30px;
+  margin-bottom: 24px;
+  letter-spacing: 0.5px;
 }
 
 .sidebar-menu {
@@ -14,16 +15,21 @@
   padding: 0;
 }
 
-.sidebar-menu li {
-  margin-bottom: 15px;
-}
-
-.sidebar-menu a {
+.sidebar-link {
+  display: block;
+  padding: 10px 12px;
+  border-radius: 8px;
   color: white;
   text-decoration: none;
+  transition: background 0.2s ease;
   font-size: 14px;
+  margin-bottom: 8px;
 }
 
-.sidebar-menu a:hover {
-  color: #4e73df;
+.sidebar-link:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.sidebar-link.active {
+  background: var(--primary);
 }

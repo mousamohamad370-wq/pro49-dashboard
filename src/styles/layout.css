@@ -5,7 +5,7 @@
 
 .layout-content {
   flex: 1;
-  background: #f5f6fa;
+  background: var(--bg);
 }
 
 .page-content {
